@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Practical 10 - Semester Wise Courses</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+
+<div class="container mt-5 mb-5">
+  <h2 class="text-center mb-4">Semester Wise Courses</h2>
+
+  <!-- Button toolbar combining two button groups -->
+  <div class="btn-toolbar justify-content-center mb-4" role="toolbar">
+    <div class="btn-group me-2 mb-2" role="group" aria-label="Odd Semester">
+      <button type="button" class="btn btn-primary" onclick="showCourses('sem1')">Sem 1</button>
+      <button type="button" class="btn btn-primary" onclick="showCourses('sem3')">Sem 3</button>
+      <button type="button" class="btn btn-primary" onclick="showCourses('sem5')">Sem 5</button>
+    </div>
+    <div class="btn-group mb-2" role="group" aria-label="Even Semester">
+      <button type="button" class="btn btn-success" onclick="showCourses('sem2')">Sem 2</button>
+      <button type="button" class="btn btn-success" onclick="showCourses('sem4')">Sem 4</button>
+      <button type="button" class="btn btn-success" onclick="showCourses('sem6')">Sem 6</button>
+    </div>
+  </div>
+
+  <!-- Course lists for each semester, hidden by default -->
+  <div id="sem1" class="course-list d-none">
+    <h5>Semester 1 Courses</h5>
+    <ul class="list-group">
+      <li class="list-group-item">Mathematics - 1</li>
+      <li class="list-group-item">English</li>
+      <li class="list-group-item">Basic Electrical Engineering</li>
+      <li class="list-group-item">Workshop Practice</li>
+    </ul>
+  </div>
+
+  <div id="sem2" class="course-list d-none">
+    <h5>Semester 2 Courses</h5>
+    <ul class="list-group">
+      <li class="list-group-item">Mathematics - 2</li>
+      <li class="list-group-item">Programming in C</li>
+      <li class="list-group-item">Digital Electronics</li>
+      <li class="list-group-item">Engineering Graphics</li>
+    </ul>
+  </div>
+
+  <div id="sem3" class="course-list d-none">
+    <h5>Semester 3 Courses</h5>
+    <ul class="list-group">
+      <li class="list-group-item">Data Structure (DS)</li>
+      <li class="list-group-item">Relational Database Management System (RDMS)</li>
+      <li class="list-group-item">Responsive Web Page Design (RWPD)</li>
+      <li class="list-group-item">Computer Network (CN)</li>
+    </ul>
+  </div>
+
+  <div id="sem4" class="course-list d-none">
+    <h5>Semester 4 Courses</h5>
+    <ul class="list-group">
+      <li class="list-group-item">Java Programming</li>
+      <li class="list-group-item">Advance Database Management System</li>
+      <li class="list-group-item">Software Engineering</li>
+      <li class="list-group-item">Web Application Development Framework</li>
+    </ul>
+  </div>
+
+  <div id="sem5" class="course-list d-none">
+    <h5>Semester 5 Courses</h5>
+    <ul class="list-group">
+      <li class="list-group-item">Mobile Application Development</li>
+      <li class="list-group-item">Project Based Learning</li>
+      <li class="list-group-item">Elective Subject</li>
+      <li class="list-group-item">Industrial Training</li>
+    </ul>
+  </div>
+
+  <div id="sem6" class="course-list d-none">
+    <h5>Semester 6 Courses</h5>
+    <ul class="list-group">
+      <li class="list-group-item">Major Project</li>
+      <li class="list-group-item">Cyber Security</li>
+      <li class="list-group-item">Cloud Computing</li>
+      <li class="list-group-item">Seminar</li>
+    </ul>
+  </div>
+
+</div>
+
+<script>
+  // Simple function to show the selected semester's course list and hide the others
+  function showCourses(id) {
+    var lists = document.getElementsByClassName('course-list');
+    for (var i = 0; i < lists.length; i++) {
+      lists[i].classList.add('d-none');
+    }
+    document.getElementById(id).classList.remove('d-none');
+  }
+</script>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
