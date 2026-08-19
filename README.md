@@ -1,1 +1,3 @@
 # college-all-assignments
+
+har subject ke assignments and study codes sabse pehle mil jayenge friends....
