@@ -1,0 +1,555 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>News Story - Bootstrap Plugins</title>
+
+    <!-- Bootstrap CSS -->
+    <link
+        href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+        rel="stylesheet"
+    >
+</head>
+
+
+<!-- Scrollspy -->
+<body
+    data-bs-spy="scroll"
+    data-bs-target="#newsNavbar"
+    data-bs-offset="100"
+    tabindex="0"
+    class="bg-light"
+>
+
+
+    <!-- ================= -->
+    <!-- NAVBAR -->
+    <!-- ================= -->
+
+    <nav
+        id="newsNavbar"
+        class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top"
+    >
+
+        <div class="container">
+
+            <a class="navbar-brand fw-bold" href="#">
+                Daily News
+            </a>
+
+            <button
+                class="navbar-toggler"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#navbarMenu"
+                aria-controls="navbarMenu"
+                aria-expanded="false"
+                aria-label="Toggle navigation"
+            >
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+
+            <div
+                class="collapse navbar-collapse"
+                id="navbarMenu"
+            >
+
+                <ul class="navbar-nav ms-auto">
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="#introduction">
+                            Introduction
+                        </a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="#main-story">
+                            Main Story
+                        </a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="#background">
+                            Background
+                        </a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="#events">
+                            Key Events
+                        </a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="#opinions">
+                            Opinions
+                        </a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="#conclusion">
+                            Conclusion
+                        </a>
+                    </li>
+
+                </ul>
+
+            </div>
+
+        </div>
+
+    </nav>
+
+
+    <!-- ================= -->
+    <!-- HEADER -->
+    <!-- ================= -->
+
+    <header class="bg-primary text-white py-5">
+
+        <div class="container">
+
+            <div class="row align-items-center">
+
+                <div class="col-lg-8">
+
+                    <span class="badge bg-light text-primary mb-3">
+                        Technology News
+                    </span>
+
+                    <h1 class="display-5 fw-bold">
+                        The Future of Smart Technology
+                    </h1>
+
+                    <p class="lead">
+                        How modern technology is changing the way
+                        people live, work and communicate.
+                    </p>
+
+                    <p class="mb-0">
+                        Published: August 19, 2026
+                    </p>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </header>
+
+
+    <!-- ================= -->
+    <!-- MAIN CONTENT -->
+    <!-- ================= -->
+
+    <main class="container py-5">
+
+        <div class="row g-4">
+
+            <!-- Article -->
+            <div class="col-lg-8">
+
+
+                <!-- INTRODUCTION -->
+                <section
+                    id="introduction"
+                    class="bg-white p-4 rounded shadow-sm mb-5"
+                >
+
+                    <h2 class="fw-bold mb-3">
+                        Introduction
+                    </h2>
+
+                    <p>
+                        Technology has become an important part of
+                        modern society. From smartphones to artificial
+                        intelligence, digital systems are changing
+                        everyday activities.
+                    </p>
+
+                    <p>
+                        Researchers and technology companies are now
+                        focusing on creating smarter and more efficient
+                        systems.
+                    </p>
+
+                </section>
+
+
+                <!-- MAIN STORY -->
+                <section
+                    id="main-story"
+                    class="bg-white p-4 rounded shadow-sm mb-5"
+                >
+
+                    <h2 class="fw-bold mb-3">
+                        Main Story
+                    </h2>
+
+                    <img
+                        src="https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=1200&q=80"
+                        class="img-fluid rounded mb-3"
+                        alt="Technology workspace"
+                        data-bs-toggle="tooltip"
+                        data-bs-placement="top"
+                        title="Technology research and development laboratory"
+                    >
+
+                    <p>
+                        New technologies are being developed rapidly.
+                        Artificial intelligence, robotics and cloud
+                        computing are becoming increasingly important.
+                    </p>
+
+                    <p>
+                        These technologies can improve productivity,
+                        communication and access to information.
+                    </p>
+
+                </section>
+
+
+                <!-- BACKGROUND -->
+                <section
+                    id="background"
+                    class="bg-white p-4 rounded shadow-sm mb-5"
+                >
+
+                    <h2 class="fw-bold mb-3">
+                        Background
+                    </h2>
+
+                    <p>
+                        The development of modern computing has taken
+                        place over several decades. Early computers
+                        occupied entire rooms, while today's devices
+                        can fit inside a pocket.
+                    </p>
+
+
+                    <!-- Collapse Button -->
+
+                    <button
+                        class="btn btn-primary"
+                        type="button"
+                        data-bs-toggle="collapse"
+                        data-bs-target="#backgroundDetails"
+                        aria-expanded="false"
+                        aria-controls="backgroundDetails"
+                    >
+                        Read More
+                    </button>
+
+
+                    <!-- Collapsible Content -->
+
+                    <div
+                        class="collapse mt-3"
+                        id="backgroundDetails"
+                    >
+
+                        <div class="card card-body">
+
+                            <h5>
+                                Additional Background
+                            </h5>
+
+                            <p class="mb-0">
+                                The growth of the internet, mobile
+                                computing and cloud infrastructure has
+                                made digital services available to
+                                billions of people around the world.
+                            </p>
+
+                        </div>
+
+                    </div>
+
+                </section>
+
+
+                <!-- KEY EVENTS -->
+                <section
+                    id="events"
+                    class="bg-white p-4 rounded shadow-sm mb-5"
+                >
+
+                    <h2 class="fw-bold mb-4">
+                        Key Events
+                    </h2>
+
+
+                    <div class="row g-4">
+
+
+                        <!-- Photo 1 -->
+                        <div class="col-md-6">
+
+                            <img
+                                src="https://images.unsplash.com/photo-1550751827-4bd374c3f58b?auto=format&fit=crop&w=800&q=80"
+                                class="img-fluid rounded"
+                                alt="Computer technology"
+                                data-bs-toggle="tooltip"
+                                data-bs-placement="top"
+                                title="Modern computer technology - Technology Center"
+                            >
+
+                            <h5 class="mt-3">
+                                Digital Innovation
+                            </h5>
+
+                            <p class="text-secondary">
+                                New digital technologies continue to
+                                transform different industries.
+                            </p>
+
+                        </div>
+
+
+                        <!-- Photo 2 -->
+                        <div class="col-md-6">
+
+                            <img
+                                src="https://images.unsplash.com/photo-1485827404703-89b55fcc595e?auto=format&fit=crop&w=800&q=80"
+                                class="img-fluid rounded"
+                                alt="Robot"
+                                data-bs-toggle="tooltip"
+                                data-bs-placement="top"
+                                title="Robotics research and artificial intelligence"
+                            >
+
+                            <h5 class="mt-3">
+                                Robotics and AI
+                            </h5>
+
+                            <p class="text-secondary">
+                                Artificial intelligence and robotics
+                                are becoming important parts of modern
+                                technology.
+                            </p>
+
+                        </div>
+
+                    </div>
+
+                </section>
+
+
+                <!-- OPINIONS -->
+                <section
+                    id="opinions"
+                    class="bg-white p-4 rounded shadow-sm mb-5"
+                >
+
+                    <h2 class="fw-bold mb-3">
+                        Public and Expert Opinions
+                    </h2>
+
+                    <p>
+                        Experts believe that responsible innovation
+                        will be important as new technologies become
+                        more powerful.
+                    </p>
+
+
+                    <!-- Popover Button -->
+
+                    <button
+                        type="button"
+                        class="btn btn-outline-primary"
+                        data-bs-toggle="popover"
+                        data-bs-placement="right"
+                        data-bs-title="Expert Opinion"
+                        data-bs-content="Experts recommend responsible development, transparency and proper testing of emerging technologies."
+                    >
+                        View Expert Opinion
+                    </button>
+
+
+                    <!-- Popover Name -->
+
+                    <p class="mt-4">
+
+                        According to
+                        <button
+                            type="button"
+                            class="btn btn-link p-0 align-baseline"
+                            data-bs-toggle="popover"
+                            data-bs-title="Technology Researcher"
+                            data-bs-content="Technology can provide major benefits when it is developed and used responsibly."
+                        >
+                            Dr. Alex Morgan
+                        </button>,
+                        responsible development is essential.
+
+                    </p>
+
+                </section>
+
+
+                <!-- CONCLUSION -->
+                <section
+                    id="conclusion"
+                    class="bg-white p-4 rounded shadow-sm mb-5"
+                >
+
+                    <h2 class="fw-bold mb-3">
+                        Conclusion
+                    </h2>
+
+                    <img
+                        src="https://images.unsplash.com/photo-1519389950473-47ba0277781c?auto=format&fit=crop&w=1200&q=80"
+                        class="img-fluid rounded mb-3"
+                        alt="People working with technology"
+                        data-bs-toggle="tooltip"
+                        data-bs-placement="top"
+                        title="People working together with modern technology"
+                    >
+
+                    <p>
+                        Modern technology is rapidly changing society.
+                        Artificial intelligence, cloud computing,
+                        robotics and digital communication will
+                        continue to influence the future.
+                    </p>
+
+                    <p class="mb-0">
+                        The challenge will be to use these technologies
+                        responsibly while maximizing their benefits.
+                    </p>
+
+                </section>
+
+
+            </div>
+
+
+            <!-- ================= -->
+            <!-- SIDEBAR -->
+            <!-- ================= -->
+
+            <aside class="col-lg-4">
+
+                <div class="card shadow-sm sticky-lg-top"
+                     style="top: 80px;">
+
+                    <div class="card-header bg-dark text-white">
+                        <h5 class="mb-0">
+                            News Information
+                        </h5>
+                    </div>
+
+                    <div class="card-body">
+
+                        <p>
+                            <strong>Category:</strong>
+                            Technology
+                        </p>
+
+                        <p>
+                            <strong>Date:</strong>
+                            August 19, 2026
+                        </p>
+
+                        <p>
+                            <strong>Author:</strong>
+                            Daily News Team
+                        </p>
+
+                        <hr>
+
+                        <h6 class="fw-bold">
+                            Bootstrap Plugins Used
+                        </h6>
+
+                        <ul class="list-group">
+
+                            <li class="list-group-item">
+                                Scrollspy
+                            </li>
+
+                            <li class="list-group-item">
+                                Tooltip
+                            </li>
+
+                            <li class="list-group-item">
+                                Collapse
+                            </li>
+
+                            <li class="list-group-item">
+                                Popover
+                            </li>
+
+                        </ul>
+
+                    </div>
+
+                </div>
+
+            </aside>
+
+        </div>
+
+    </main>
+
+
+    <!-- ================= -->
+    <!-- FOOTER -->
+    <!-- ================= -->
+
+    <footer class="bg-dark text-white text-center py-4">
+
+        <div class="container">
+
+            <p class="mb-0">
+                © 2026 Daily News. All Rights Reserved.
+            </p>
+
+        </div>
+
+    </footer>
+
+
+    <!-- Bootstrap JavaScript Bundle -->
+    <script
+        src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js">
+    </script>
+
+
+    <!-- Initialize Bootstrap Plugins -->
+    <script>
+
+        // Initialize all Tooltips
+        const tooltipElements =
+            document.querySelectorAll(
+                '[data-bs-toggle="tooltip"]'
+            );
+
+        [...tooltipElements].forEach(function (element) {
+
+            new bootstrap.Tooltip(element);
+
+        });
+
+
+        // Initialize all Popovers
+        const popoverElements =
+            document.querySelectorAll(
+                '[data-bs-toggle="popover"]'
+            );
+
+        [...popoverElements].forEach(function (element) {
+
+            new bootstrap.Popover(element);
+
+        });
+
+    </script>
+
+</body>
+</html>

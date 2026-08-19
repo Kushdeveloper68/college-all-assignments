@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Practical 12 - Course Unit Summary</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+
+<div class="container mt-4 mb-5">
+  <h2 class="text-center">Responsive Web Page Design (RWPD)</h2>
+  <p class="text-center text-muted">A subject covering HTML, CSS and the Bootstrap framework for building responsive websites.</p>
+
+  <!-- Nav Pills -->
+  <ul class="nav nav-pills justify-content-center mb-3" id="unitTab" role="tablist">
+    <li class="nav-item" role="presentation">
+      <button class="nav-link active" data-bs-toggle="pill" data-bs-target="#unit1" type="button">Unit 1</button>
+    </li>
+    <li class="nav-item" role="presentation">
+      <button class="nav-link" data-bs-toggle="pill" data-bs-target="#unit2" type="button">Unit 2</button>
+    </li>
+    <li class="nav-item" role="presentation">
+      <button class="nav-link" data-bs-toggle="pill" data-bs-target="#unit3" type="button">Unit 3</button>
+    </li>
+    <li class="nav-item" role="presentation">
+      <button class="nav-link" data-bs-toggle="pill" data-bs-target="#unit4" type="button">Unit 4</button>
+    </li>
+    <li class="nav-item" role="presentation">
+      <button class="nav-link" data-bs-toggle="pill" data-bs-target="#unit5" type="button">Unit 5</button>
+    </li>
+  </ul>
+
+  <div class="tab-content border rounded p-4">
+
+    <div class="tab-pane fade show active" id="unit1">
+      <h4>Unit 1: Introduction to HTML</h4>
+      <p><strong>Important Topics:</strong> HTML document structure, tags, attributes, headings, paragraphs, links, images, lists, tables.</p>
+      <p><strong>Key Points:</strong> Every HTML page starts with a doctype declaration and follows a tree structure of nested elements.</p>
+      <p>This unit builds the foundation needed before moving on to CSS and Bootstrap styling in later units.</p>
+    </div>
+
+    <div class="tab-pane fade" id="unit2">
+      <h4>Unit 2: CSS Fundamentals</h4>
+      <p><strong>Important Topics:</strong> Selectors, box model, colors, fonts, positioning, flexbox basics.</p>
+      <p><strong>Key Points:</strong> CSS controls the visual presentation of HTML elements and can be applied inline, internally or externally.</p>
+      <p>Understanding the box model is essential for controlling spacing and layout on any webpage.</p>
+    </div>
+
+    <div class="tab-pane fade" id="unit3">
+      <h4>Unit 3: Getting Started with Bootstrap</h4>
+      <p><strong>Important Topics:</strong> Installing Bootstrap, container/row/column grid system, breakpoints.</p>
+      <p><strong>Key Points:</strong> Bootstrap's 12 column grid makes it easy to build layouts that automatically adapt to different screen sizes.</p>
+      <p>This unit covers linking Bootstrap via CDN or local files and building the first responsive layout.</p>
+    </div>
+
+    <div class="tab-pane fade" id="unit4">
+      <h4>Unit 4: Bootstrap Components</h4>
+      <p><strong>Important Topics:</strong> Navbar, cards, buttons, alerts, forms, dropdowns, modals.</p>
+      <p><strong>Key Points:</strong> Bootstrap provides pre-built, tested components that can be combined to quickly build a working interface.</p>
+      <p>Most components require both the Bootstrap CSS and the Bootstrap JavaScript bundle to work correctly.</p>
+    </div>
+
+    <div class="tab-pane fade" id="unit5">
+      <h4>Unit 5: Responsive Utilities and Plugins</h4>
+      <p><strong>Important Topics:</strong> Utility classes, responsive images and tables, JavaScript plugins like Scrollspy, Tooltip and Popover.</p>
+      <p><strong>Key Points:</strong> Utility classes reduce the need for custom CSS, while plugins add interactivity like tabs, modals and tooltips.</p>
+      <p>This final unit ties together layout, components and interactivity to build a complete responsive website.</p>
+    </div>
+
+  </div>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

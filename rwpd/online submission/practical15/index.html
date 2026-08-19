@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Practical 15 - Bootstrap Progress Bars</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+
+<div class="container mt-4 mb-5">
+  <h2 class="text-center mb-4">Bootstrap Progress Bars</h2>
+
+  <!-- a. Basic progress bar -->
+  <h5>a. Basic Progress Bar</h5>
+  <div class="progress mb-4" role="progressbar" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100">
+    <div class="progress-bar" style="width: 50%"></div>
+  </div>
+
+  <!-- b. Progress bar with label -->
+  <h5>b. Progress Bar with Label</h5>
+  <div class="progress mb-4" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100">
+    <div class="progress-bar" style="width: 75%">75%</div>
+  </div>
+
+  <!-- c. Multi-color progress bars -->
+  <h5>c. Multi-color Progress Bars</h5>
+  <div class="progress mb-2" role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100">
+    <div class="progress-bar bg-success" style="width: 100%">Success</div>
+  </div>
+  <div class="progress mb-2" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100">
+    <div class="progress-bar bg-info" style="width: 70%">Information</div>
+  </div>
+  <div class="progress mb-2" role="progressbar" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100">
+    <div class="progress-bar bg-warning" style="width: 50%">Warning</div>
+  </div>
+  <div class="progress mb-4" role="progressbar" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">
+    <div class="progress-bar bg-danger" style="width: 25%">Danger</div>
+  </div>
+
+  <!-- Striped progress bars -->
+  <h5>Striped Progress Bars</h5>
+  <div class="progress mb-2" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100">
+    <div class="progress-bar progress-bar-striped bg-success" style="width: 60%"></div>
+  </div>
+  <div class="progress mb-4" role="progressbar" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100">
+    <div class="progress-bar progress-bar-striped bg-danger" style="width: 40%"></div>
+  </div>
+
+  <!-- Animated progress bars -->
+  <h5>Animated Progress Bars</h5>
+  <div class="progress mb-4" role="progressbar" aria-valuenow="65" aria-valuemin="0" aria-valuemax="100">
+    <div class="progress-bar progress-bar-striped progress-bar-animated bg-info" style="width: 65%"></div>
+  </div>
+
+  <!-- Multiple skill progress bars -->
+  <h5>Skill Progress</h5>
+  <p class="mb-1">HTML - 90%</p>
+  <div class="progress mb-3" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100">
+    <div class="progress-bar bg-success" style="width: 90%">90%</div>
+  </div>
+  <p class="mb-1">CSS - 80%</p>
+  <div class="progress mb-3" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100">
+    <div class="progress-bar bg-info" style="width: 80%">80%</div>
+  </div>
+  <p class="mb-1">Bootstrap - 75%</p>
+  <div class="progress mb-3" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100">
+    <div class="progress-bar bg-primary" style="width: 75%">75%</div>
+  </div>
+  <p class="mb-1">JavaScript - 65%</p>
+  <div class="progress mb-4" role="progressbar" aria-valuenow="65" aria-valuemin="0" aria-valuemax="100">
+    <div class="progress-bar bg-warning" style="width: 65%">65%</div>
+  </div>
+
+  <!-- d. Dynamic progress bar using JavaScript -->
+  <h5>d. Change Progress Bar Value Dynamically</h5>
+  <div class="progress mb-3" role="progressbar" id="dynamicBar" aria-valuenow="30" aria-valuemin="0" aria-valuemax="100">
+    <div class="progress-bar bg-primary" id="dynamicBarInner" style="width: 30%">30%</div>
+  </div>
+  <div class="input-group mb-3" style="max-width: 400px;">
+    <input type="number" class="form-control" id="newValue" placeholder="Enter value 0-100" min="0" max="100">
+    <button class="btn btn-primary" type="button" onclick="updateProgress()">Update Progress</button>
+  </div>
+
+</div>
+
+<script>
+  function updateProgress() {
+    var value = document.getElementById('newValue').value;
+    if (value === '' || value < 0 || value > 100) {
+      alert('Please enter a value between 0 and 100');
+      return;
+    }
+    var bar = document.getElementById('dynamicBarInner');
+    var outer = document.getElementById('dynamicBar');
+    bar.style.width = value + '%';
+    bar.innerText = value + '%';
+    outer.setAttribute('aria-valuenow', value);
+  }
+</script>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
