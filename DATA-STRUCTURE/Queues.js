@@ -5,7 +5,7 @@ let front = -1
 let rear = -1
 let lenghtOfQueue = 30
 function ENQUEUE(element) {
-    if (rear >= lenghtOfQueue) return "OVERFLOW";
+    if (rear > lenghtOfQueue) return "OVERFLOW";
      if (front == -1) front = 0;
      rear += 1
      queue[rear] = element
