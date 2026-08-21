@@ -1,6 +1,6 @@
+// written by developer kush -> https://kushdeveloper.me 
 #include <stdio.h>
 #include <stdlib.h>
-
 // Structure for a linked list node
 struct Node {
     int data;
