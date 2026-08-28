@@ -1,3 +1,4 @@
+// written by developer kush -> https://kushdeveloper.me 
 #include <stdio.h>
 #include <stdlib.h>
 
