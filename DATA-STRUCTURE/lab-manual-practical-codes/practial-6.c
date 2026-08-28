@@ -33,7 +33,7 @@ void creation_insertion_display_Node(struct Node **head , int item)
     printf("%d ->", temp->data);
     temp = temp->next;
    }
-   
+   printf("NULL\n");
 };
 
 
